@@ -3,7 +3,6 @@ import CompanionCard from "@/components/CompanionCard";
 import CTA from "@/components/CTA";
 import CompanionsList from "@/components/CompanionsList";
 import { recentSessions } from "@/constants";
-import Image from "next/image";
 
 const Page = () => {
   return (
