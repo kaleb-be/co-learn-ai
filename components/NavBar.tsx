@@ -17,10 +17,10 @@ const NavBar = () => {
           <SignedIn>
             <UserButton />
           </SignedIn>
-          <p></p>
+
           <SignedOut>
             <div className="flex gap-2">
-              <SignInButton mode="modal">
+              <SignInButton>
                 <button className="btn-signin">Sign in</button>
               </SignInButton>
             </div>
