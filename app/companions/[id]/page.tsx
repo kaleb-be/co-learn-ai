@@ -1,6 +1,4 @@
 const CompanionSession = () => {
-	return (
-		<div>CompanionSession</div>
-	)
-}
-export default CompanionSession
+  return <div>CompanionSession</div>;
+};
+export default CompanionSession;
