@@ -6,7 +6,7 @@ import {
   getAllCompanions,
   getRecentSessions,
 } from "@/lib/actions/companion.actions";
-import { getSubjectColor } from "@/lib/utils";
+import {getSubjectColor} from "@/lib/utils";
 
 const Page = async () => {
   const companions = await getAllCompanions({ limit: 3 });
@@ -30,7 +30,7 @@ const Page = async () => {
           companions={recentSessionsCompanions}
           className={"w-2/3 max-lg:w-full"}
         />
-        <CTA />
+        <CTA/>
       </section>
     </main>
   );

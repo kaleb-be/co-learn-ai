@@ -1,8 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import {auth} from "@clerk/nextjs/server";
 
-const Cta = () => {
+const Cta = async () => {
+  const {userId} = await auth()
+
   return (
+
     <section className={"cta-section"}>
       <div className="cta-badge">Start learning your way.</div>
       <h2 className="text-3xl font-bold">
@@ -16,7 +20,7 @@ const Cta = () => {
       <button className="btn-primary">
         <Image src={"/icons/plus.svg"} alt={"plus"} width={12} height={12} />
         <Link href={"/companions/new"}>
-          <p>Build a New Companion</p>
+          <p>{!userId && 'Sign In and '}Build a New Companion</p>
         </Link>
       </button>
     </section>
